@@ -142,3 +142,4 @@ var randNum = getRandomArbitrary(0, length.quest-1);
 return quest[randNum];
 }
 // local Testing
+charGen(); 

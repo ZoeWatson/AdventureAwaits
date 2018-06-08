@@ -8,7 +8,7 @@
         <meta name="description" content="Class Prodject">
     </head>
 </body>
-<script src="charGEN.js"> charGen(); </script>
+<script src="charGEN.js"></script>
 <ul id="list">
 </ul>
 
