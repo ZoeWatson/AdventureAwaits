@@ -186,25 +186,21 @@ function charGen(){
 
 /// ------------------------------ Cleaning Functions-------------------------- //
 
-// adds option to clean list
+ // adds option to clean list
 function clean(option, list_clean){
-    try{
         // calls clean_clean
        if (list_clean.length > 5){
             // empty list
-            list_clean = [];
+            list_clean.length = 0;
         }
         // checks if option is list_clean
-        if (!(list_clean.indexOf("option")==-1))){
-            list_clean.push(option);
-            // return true
+        if ((list_clean.indexOf("option")==-1)){
             return true;
+         list_clean.push(option);
         }
-        // return false
-        return false;
-    }catch(err){
-        addText("testing", "function clean failed"+err.name);
-      }
+        
+            // return true
+            return false;
     }
 
 /// ------------------------------ Message Functions -------------------------- //
@@ -215,11 +211,13 @@ function message(messageList){
 
         // gets a random message
         var message_s = choose(messageList);
-
+        
+       var test =clean(message_s, cleanMes);
         // clean
-        while (!(clean(message_s, cleanMes))) {
+        while (test!=true) {
             // get message
             message_s = choose(messageList);
+           test =clean(message_s, cleanMes);
         }
         // print message
          addText("sit",message_s);
