@@ -1,9 +1,12 @@
+ul{
+  list-style:none;
+}
 li {
-  color: red;
+  padding: 0.5em;
 }
 
 article{
-  
+  padding: 1em;
 }
 
 #main{
@@ -14,17 +17,20 @@ article{
 }
 
 #game{
+  width: 60%;
   
 }
 #sit{
   
 }
 
-#choices{
-  
+#choices li:hover {
+  color: grey;
+  background-color: back;
 }
 
 #aside{
+  width:35%;
   
 }
 
@@ -37,5 +43,4 @@ article{
 }
 
 #foot{
-  
 }
