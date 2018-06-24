@@ -22,28 +22,30 @@ function arrayTest(array){
 
 // make string into list item
 function buildList(text){
-  var li = document.createElement('li');
-  var liText = document.createTextNode(text);
-  li.appendChild(liText);
-  var list =  document.getElementById('list')[0];
-  list.appendChild(li);
+  var para = document.createElement("li");
+    var node = document.createTextNode(text);
+    para.appendChild(node);
+
+    var element = document.getElementById("list");
+    element.appendChild(para);
 }
 
 // gen Char
 function  charGen(){
   // strings
   var Fname, Lname, name, stat, thought, quote, town, race, quest, facts;
-  for(i; )i <  getRandomArbitrary(0, 4); i++;){
+
+  for(var i=0; i < getRandomArbitrary(0, 4); i++){
     Fname += " "+nameGen();
   }
   Lname = LnameGen();
   name = Fname + " "+ Lname;
 
-  for(i; )i <  getRandomArbitrary(0, 8); i++;){
+  for( var i=0; i <  getRandomArbitrary(0, 8); i++){
     stat += statGen()+": getRandomArbitrary(0, 100) \n";
   }
 
-  for(i; )i <  getRandomArbitrary(0, 10); i++;){
+  for(var i=0; i <  getRandomArbitrary(0, 10); i++){
     thought += thoughtGen()+"\n";
   }
 //hello i put this random note here to annoy you sister
@@ -51,11 +53,11 @@ function  charGen(){
   town = townGen();
   race = raceGen();
 
-  for(i; )i <  getRandomArbitrary(0, 4); i++;){
+  for( vari =0; i <  getRandomArbitrary(0, 4); i++){
     quest += questGen()+"\n";
   }
 
-  for(i; )i <  getRandomArbitrary(0, 10); i++;){
+  for(var i=0; i <  getRandomArbitrary(0, 10); i++){
     facts += factGen()+"\n";
   }
 
@@ -101,6 +103,7 @@ var stat = [];
 stat = readArray(Stat.txt, stat);
 var randNum = getRandomArbitrary(0, length.stat-1);
 return stat[randNum];
+}
 
 // gen town
 function TownGen(){
@@ -142,4 +145,4 @@ var randNum = getRandomArbitrary(0, length.quest-1);
 return quest[randNum];
 }
 // local Testing
-charGen(); 
+charGen();
