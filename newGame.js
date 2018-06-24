@@ -185,40 +185,20 @@ function charGen(){
   }
 
 /// ------------------------------ Cleaning Functions-------------------------- //
-// checks if option is in array
-function includes(option, list_clean) {
-  for (var i=0, len=list_clean.length;i<len;i++) {
-        if (list_clean[i] == option){
-          return true;
-        }
-  }
-  return false;
-}
-// clears list if longer than 5
-function clean_clean(list_clean){
-    try{
-        // checks if clean list is larger than 5
-        if (list_clean.length > 5){
-            // empty list
-            list_clean = [];
-        }
-        // returns list
-        return list_clean;
-    }catch(err){
-        addText("testing", "function clean_clean failed");
-      }
-      }
+
 // adds option to clean list
 function clean(option, list_clean){
     try{
         // calls clean_clean
-        list_clean = clean_clean(list_clean);
+       if (list_clean.length > 5){
+            // empty list
+            list_clean = [];
+        }
         // checks if option is list_clean
-        if (!(includes(option, list_clean))){
+        if (!(list_clean.indexOf("option")==-1))){
             list_clean.push(option);
             // return true
             return true;
-        }else{
         }
         // return false
         return false;
