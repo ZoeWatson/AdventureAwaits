@@ -63,10 +63,13 @@ article{
   clear: both;}
 #foot{
   clear: both;
+  font-size: small;
   text-align: center;
-  background-color: grey;
 }
 
+#main{
+  background-color: white;
+}
 /* classes */
 .cit{
   font-style:italic;
@@ -77,6 +80,7 @@ article{
   font-size: xx-large;
   background-color: black;
   color: white;
+  text-decoration:none;
 
 }
 .grader a{
