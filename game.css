@@ -1,3 +1,10 @@
+/* elements */
+body{
+  padding: 1em;
+  margin:auto;
+  width: 90%;
+}
+
 ul{
   list-style:none;
 }
@@ -9,11 +16,12 @@ article{
   padding: 1em;
 }
 
-#main{
-  
-}
+/* ids */
 #head{
-  
+  text-align: center;
+  font-size:xx-large;
+  padding: 0.5em;
+
 }
 
 #game{
@@ -49,3 +57,4 @@ article{
   clear: both;
   text-align: center;
 }
+
