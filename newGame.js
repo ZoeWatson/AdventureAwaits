@@ -215,7 +215,7 @@ function message(messageList){
         
        var test =clean(message_s, cleanMes);
         // clean
-        while (test!=true) {
+        while (test!==true) {
             // get message
             message_s = choose(messageList);
            test =clean(message_s, cleanMes);
@@ -309,7 +309,7 @@ function skill_choice(skill_temp){
             var skill_num =  randrange(0, 5);
             
             var test = clean(skill_num, cleanSkill);
-            while (test != false){
+            while (test F= true){
                 // chooses what skill to add to
                 skill_num =  randrange(0, 5);
                test =clean(skill_num, cleanSkill);
