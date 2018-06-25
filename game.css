@@ -3,6 +3,7 @@ body{
   padding: 1em;
   margin:auto;
   width: 90%;
+  font-size:large;
 }
 
 ul{
@@ -12,6 +13,10 @@ li {
   padding: 0.5em;
 }
 
+h2{
+  text-align:center;
+  text-decoration: underline;
+}
 article{
   padding: 1em;
 }
@@ -23,7 +28,12 @@ article{
   padding: 0.5em;
 
 }
+#char li{
+  display: inline;
+  padding-right: 0px;
+  padding-left: 0px;
 
+}
 #game{
   width: 60%;
   float: left;
@@ -45,16 +55,14 @@ article{
   
 }
 
-#char{
-  
-}
-
-#stats{
-  
-}
-
 #foot{
   clear: both;
   text-align: center;
+  background-color: grey;
 }
 
+/* classes */
+.cit{
+  font-style:italic;
+  font-size: xx-small;
+}
