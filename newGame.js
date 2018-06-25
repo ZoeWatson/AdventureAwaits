@@ -18,6 +18,8 @@ var skill_5 = 0;
 var WIN_SKILL = 100;
 var LOSE_SKILL = -100;
 
+
+  
 // skill temp arrays
 var skill_temp0 = [0,0,0,0,0];
 var skill_temp1 = [0,0,0,0,0];
@@ -35,8 +37,11 @@ addText("S5", s5_name+": "+ skill_5);
 
 // charGen
 charGen();
+
 // call gameOn
  gameOn();
+
+
 
 function gameOn(){
   // ----------- Game
@@ -169,13 +174,12 @@ function toColorList(){
 }
 
 function toPronounList(){
-    var Pronoun = [' their ', ' her ', ' his ', ' zer ', ' ler ', ' lis ', ' aer ', ' eir ', ' ver ', ' hir ', ' her ', ' his '];
+    var pronoun = [' their ', ' her ', ' his ', ' zer ', ' ler ', ' lis ', ' aer ', ' eir ', ' ver ', ' hir ', ' her ', ' his '];
     return pronoun;
 }
 
 function toJobList(){
-    var Job = 
-[' Spy ', ' Knight ', ' Suppervillian ', ' Evil Overlord ', ' Fairy ', ' Unicorn ', ' Supreme Commander ', ' Princess ', ' Rockstar ', ' Monster ', ' Vampire ', ' Teddy Bear ', ' Queen ', ' King ', ' Duke ', ' Duchess ', ' Superhero ', ' Robot ', ' Dinosaur ', ' High-School Gym Teacher ', '  Professor ', '  Accountant ', ' Dictator ', ' Werewolf ', '  Anime ', '  God ', ' Goddess ', ' Witch ', ' Wizzard ', ' Sorcerer ', ' Sorceress ', ' Dragon ', ' Imp ', ' Elf ', ' Dwarf ', ' Prince ', ' Barbarian ', ' Bard ', ' Cleric ', ' Druid ', ' Warrior ', ' Monk ', ' Paladin ', ' Ranger ', ' Rogue ', ' Warlock ', ' Assassin ', ' Dog ', ' Half-Orc ', ' Orc ', '  Halfling ', ' Human ', ' Eladrin ', ' Gnome ', ' Aarakocra ', ' Aasimar ', ' Armand ', ' Asherati ', ' Aurak ', ' Aventi ', ' Bozak ', ' Bullywug ', ' President ', ' Bugbear ', ' Centaur ', ' Changeling ', ' Dire WereboarDoppelganger ', ' Draconic creature ', ' Dracotaur ', ' Dragonkin ', ' Jagerkin ', ' Gargoyle ', ' Genasi ', ' Ghost ', ' Hagspawn ', ' Hobgoblin ', ' Neraphim ', ' Nezumi ', ' Ogre ', ' Pixie ', ' Shadowswyft ', ' Troll '];
+    var Job = [' Spy ', ' Knight ', ' Suppervillian ', ' Evil Overlord ', ' Fairy ', ' Unicorn ', ' Supreme Commander ', ' Princess ', ' Rockstar ', ' Monster ', ' Vampire ', ' Teddy Bear ', ' Queen ', ' King ', ' Duke ', ' Duchess ', ' Superhero ', ' Robot ', ' Dinosaur ', ' High-School Gym Teacher ', '  Professor ', '  Accountant ', ' Dictator ', ' Werewolf ', '  Anime ', '  God ', ' Goddess ', ' Witch ', ' Wizzard ', ' Sorcerer ', ' Sorceress ', ' Dragon ', ' Imp ', ' Elf ', ' Dwarf ', ' Prince ', ' Barbarian ', ' Bard ', ' Cleric ', ' Druid ', ' Warrior ', ' Monk ', ' Paladin ', ' Ranger ', ' Rogue ', ' Warlock ', ' Assassin ', ' Dog ', ' Half-Orc ', ' Orc ', '  Halfling ', ' Human ', ' Eladrin ', ' Gnome ', ' Aarakocra ', ' Aasimar ', ' Armand ', ' Asherati ', ' Aurak ', ' Aventi ', ' Bozak ', ' Bullywug ', ' President ', ' Bugbear ', ' Centaur ', ' Changeling ', ' Dire WereboarDoppelganger ', ' Draconic creature ', ' Dracotaur ', ' Dragonkin ', ' Jagerkin ', ' Gargoyle ', ' Genasi ', ' Ghost ', ' Hagspawn ', ' Hobgoblin ', ' Neraphim ', ' Nezumi ', ' Ogre ', ' Pixie ', ' Shadowswyft ', ' Troll '];
     return Job;
 }
 
@@ -189,26 +193,29 @@ function to1QuestList(){
     return quest1;
 }
 function to2QuestList(){
-    var quest2 = [' Save the galaxy ', ' Fall in love ', ' Fall out of love ', ' Rock and roll ', ' Eat all the cake ', ' Eat all the pie ', ' Destroy the universe ', ' Save the multiverse ', ' Turn all cats into rainbow pop tarts ', '  Bring firefly back ', ' Eat marshmallows ', ' Roast marshmallows while the world burns ', ' Join a militia ', ' Do something, anything. ', ' Conquer the world with an army of flying monkeys ', ' Graduate from a prestigious university.. ', ' Become an evil overlord. ', ' Turn into fish. ', ' Turn into a bear. ', ' Turn into a unicorn. ', ' Turn into a duck. ', ' Buy a cat and retire. ', ' Sell your soul. ', ' Buy a soul. ', ' Do the thing. ', ' Do the tango. ', ' Do the limbo. ', ' Do the Makana. ', ' Take a selfie. ', ' Push a button, any button. ', ' Play Minecraft. ', ' Grow wings. ', ' Fly away. ', ' Shoot lasers from your eyes. ', ' Preform a one-person Broadway show. ', ' Tap Dance. ', ' Cha, Cha, ΓÇª. Reeeal Sloow. ', ' Build a time machine. ', ' Sell all your possessions and head for comic con.. ', ' Do the Cancan. ', ' Summon the eldritch gods. ', ' Kill it with kindness. And if that fails, kill it with sharp sticks or knives. ', ' Dance like the government is watching '];
+    var quest2 = [' Save the galaxy ', ' Fall in love ', ' Fall out of love ', ' Rock and roll ', ' Eat all the cake ', ' Eat all the pie ', ' Destroy the universe ', ' Save the multiverse ', ' Turn all cats into rainbow pop tarts ', '  Bring firefly back ', ' Eat marshmallows ', ' Roast marshmallows while the world burns ', ' Join a militia ', ' Do something, anything. ', ' Conquer the world with an army of flying monkeys ', ' Graduate from a prestigious university.. ', ' Become an evil overlord. ', ' Turn into fish. ', ' Turn into a bear. ', ' Turn into a unicorn. ', ' Turn into a duck. ', ' Buy a cat and retire. ', ' Sell your soul. ', ' Buy a soul. ', ' Do the thing. ', ' Do the tango. ', ' Do the limbo. ', ' Do the Makana. ', ' Take a selfie. ', ' Push a button, any button. ', ' Play Minecraft. ', ' Grow wings. ', ' Fly away. ', ' Shoot lasers from your eyes. ', ' Preform a one-person Broadway show. ', ' Tap Dance. ', ' Cha, Cha, ΓÇª. Reeeal Sloow. ', ' Build a time machine. ', ' Sell all your possessions and head for comic con. ', ' Do the Cancan. ', ' Summon the eldritch gods. ', ' Kill it with kindness. And if that fails, kill it with sharp sticks or knives. ', ' Dance like the government is watching '];
     return quest2;
 }
 
 // char Gen
 function charGen(){
- // char Gen list
+// list gen
+// char Gen list
   var Nlist = toNameList();
   var Jlist = toJobList();
   var Tlist = toTownList();
   var Q1list = to1QuestList();
   var Q2list = to2QuestList();
   var Plist = toPronounList();
-  var Colist = toColorList();
+  var Clist = toColorList();
  
-  addText('name', choose(Nlist));
-  addText('class', "The " + choose(Jlist)+" "+choose(Jlist)+" "+choose(Jlist) );
+    addText('name', choose(Nlist));
+  addText('job', "The " + choose(Jlist)+" "+choose(Jlist)+" "+choose(Jlist) );
   addText('town', "of "+choose(Tlist)+choose(Tlist)+choose(Tlist) );
-  addText('quest', 'is on a quest for '+choose(Q1list)+" and to "+choose(Q2list) );
+  addText('quest', 'is on a quest for '+choose(Q1list)+" and to "+choose(Q2list));
   addText('color', "Oh, and "+choose(Plist)+" favourite color is "+ choose(Clist));
+
+
 }
   function choose(arr){
     return arr[Math.floor(Math.random()*arr.length)];
@@ -224,7 +231,7 @@ function charGen(){
  // adds option to clean list
 function clean(option, list_clean){
         // calls clean_clean
-       if (list_clean.length > 6){
+       if (list_clean.length >= 6){
             // empty list
             list_clean.length = 0;
         }
@@ -283,7 +290,7 @@ function options(choiceList, i){
 
          var num = i +1;
          // print options
-         addText("C"+num, choice+ "/n "+ skillString);
+         addText("C"+num, choice+ "<br /> "+ skillString);
 
 
     }catch(err){
