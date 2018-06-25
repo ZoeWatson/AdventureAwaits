@@ -293,7 +293,7 @@ function skill_choice(skill_temp){
         // gen random skill choices
 
         // num of skill changes
-        var num = randrange(1, 6);
+        var num = randrange(1, 5);
 
         // String skills
         var skillString = " ";
@@ -305,38 +305,38 @@ function skill_choice(skill_temp){
             // gen random num
             var add =  randrange(-50, 51);
 
-            var skill_num =  randrange(1, 6);
+            var skill_num =  randrange(1, 5);
             while (clean(skill_num, cleanSkill)){
                 // chooses what skill to add to
-                skill_num =  randrange(1, 6);
+                skill_num =  randrange(1, 5);
             }
             if (skill_num == 1){
                   // print
-                  skillString = skillString + " "+s1_name+ ":"+ skill_1+ "+"+ add;
+                  skillString = skillString + " "+s1_name+ ": "+ skill_1+ " + "+ add;
                   // replace skill temp
                   skill_temp[0] = add;
 
                }else if( skill_num == 2){
                   // print
-                    skillString = skillString + " "+ s2_name+ ":"+ skill_2+ "+"+ add;
+                    skillString = skillString + " "+ s2_name+ ": "+ skill_2+ " + "+ add;
                   // replace skill temp
                   skill_temp[1] = add;
 
                }else if (skill_num == 3){
                   // print
-                    skillString = skillString + " "+s3_name+ ":"+ skill_3+ "+"+ add;
+                    skillString = skillString + " "+s3_name+ ": "+ skill_3+ " + "+ add;
                   // replace skill temp
                   skill_temp[2] = add;
 
                }else if (skill_num == 4){
                   // print
-                    skillString = skillString + " "+s4_name+ ":"+ skill_4+ "+"+ add;
+                    skillString = skillString + " "+s4_name+ ": "+ skill_4+ " + "+ add;
                   // replace skill temp
                   skill_temp[3] = add;
 
             }else{
                 // print
-                skillString = skillString + " "+s5_name+ ":"+ skill_5+ "+"+ add;
+                skillString = skillString + " "+s5_name+ ": "+ skill_5+ " + "+ add;
                 // replace skill temp
                 skill_temp[4] = add;
             }
