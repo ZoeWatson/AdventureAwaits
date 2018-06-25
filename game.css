@@ -57,6 +57,8 @@ article{
 #about p{
   text-align: center;
 }
+#about{ 
+  clear: both;}
 #foot{
   clear: both;
   text-align: center;
