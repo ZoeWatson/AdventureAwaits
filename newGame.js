@@ -184,7 +184,7 @@ function toJobList(){
 }
 
 function toTownList(){
-    var town = [' Hum ', ' De ', ' Dum ', ' Da ', ' La ', ' Le ', ' Gargle ', ' Ock ', ' Sum ', ' Num ', ' Um ', ' Du ', ' Des ', ' Les ', ' Be ', ' Ba ', ' Bo ', ' Bum ', ' Gru ', ' Gra ', ' Grum ', ' Sa ', ' Se ', ' So ', ' Do ', ' Ook ', ' Bek ', ' Ka ', ' Kec ', ' Ja ', ' Je ', ' Ju ', ' Jo ', ' Ji ', ' Te ', ' Ta ', ' Ra ', ' Re ', ' Ro ', ' Tu ', ' We ', ' Wa ', ' Wu ', ' Wo ', ' Pa ', ' Po ', ' Pu ', ' Pe ', ' Ha ', ' Ho ', ' Hu ', ' He ', ' Ma ', ' Mu ', ' Mo ', ' Me ', ' Za ', ' Zo ', ' Zu ', ' Xe ', ' Xo ', ' Xi ', ' Xu '];
+    var town =['Hum','De','Dum','Da','La','Le','Gargle','Ock','Sum','Num','Um','Du','Des','Les','Be','Ba','Bo','Bum','Gru','Gra','Grum','Sa','Se','So','Do','Ook','Bek','Ka','Kec','Ja','Je','Ju','Jo','Ji','Te','Ta','Ra','Re','Ro','Tu','We','Wa','Wu','Wo','Pa','Po','Pu','Pe','Ha','Ho','Hu','He','Ma','Mu','Mo','Me','Za','Zo','Zu','Xe','Xo','Xi','Xu'];
     return town;
 }
 
