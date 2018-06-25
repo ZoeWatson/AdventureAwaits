@@ -67,7 +67,11 @@ function gameOn(){
         // print choice
          options(choiceList, i);
     }
-
+    for ( i = 1; i < 7; i++){
+    	    if ("" == document.getElementById("C"+i).innerText){
+          	document.getElementById("C"+i).style.display = "none";
+          }				
+    }
     // print score
     addText("S1", s1_name+": " + skill_1);
     addText("S2", s2_name+": "+ skill_2);
