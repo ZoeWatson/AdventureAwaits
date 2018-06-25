@@ -18,10 +18,12 @@ article{
 
 #game{
   width: 60%;
-  
+  float: left;
 }
 #sit{
-  
+  font-size:xx-large;
+  width: 90%;
+  margin: auto;
 }
 
 #choices li:hover {
@@ -31,6 +33,7 @@ article{
 
 #aside{
   width:35%;
+  float: left;
   
 }
 
@@ -43,4 +46,6 @@ article{
 }
 
 #foot{
+  clear: both;
+  text-align: center;
 }
