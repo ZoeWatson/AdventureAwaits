@@ -306,9 +306,12 @@ function skill_choice(skill_temp){
             var add =  randrange(-50, 51);
 
             var skill_num =  randrange(1, 5);
-            while (clean(skill_num, cleanSkill)){
+            
+            var test = clean(skill_num, cleanSkill);
+            while (test != true){
                 // chooses what skill to add to
                 skill_num =  randrange(1, 5);
+               test =clean(skill_num, cleanSkill);
             }
             if (skill_num == 1){
                   // print
