@@ -189,7 +189,7 @@ function charGen(){
  // adds option to clean list
 function clean(option, list_clean){
         // calls clean_clean
-       if (list_clean.length > 4){
+       if (list_clean.length > 6){
             // empty list
             list_clean.length = 0;
         }
@@ -292,7 +292,7 @@ function what_temp_list(skill_temp0, skill_temp1, skill_temp2, skill_temp3, skil
 function skill_choice(skill_temp){
     try{
         // gen random skill choices
-
+        var list_clean = [];
         // num of skill changes
         var num = randrange(1, 5);
 
@@ -300,19 +300,24 @@ function skill_choice(skill_temp){
         var skillString = " ";
 
         // clean list
-        var cleanSkill = [];
         for (var i = 0; i < num; i++){
 
             // gen random num
             var add =  randrange(-50, 51);
 
-            var skill_num =  randrange(0, 5);
+            var skill_num =  randrange(1, 5);
             
-            var test = clean(skill_num, cleanSkill);
-            while (test F= true){
+            
+            var test = false;
+            if ((list_clean.indexOf(skill_num)==-1)){
+                  list_clean.push(skill_num);
+            			test = true; }
+            while (test !== true){
                 // chooses what skill to add to
-                skill_num =  randrange(0, 5);
-               test =clean(skill_num, cleanSkill);
+                skill_num =  randrange(1, 5);
+               if ((list_clean.indexOf(skill_num)==-1)){
+                  list_clean.push(skill_num);
+            			test = true; }              
             }
             if (skill_num == 1){
                   // print
