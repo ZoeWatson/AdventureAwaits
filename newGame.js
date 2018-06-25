@@ -349,7 +349,7 @@ function skill_choice(skill_temp){
         for (var i = 0; i < num; i++){
 
             // gen random num
-            var add =  randrange(-50, 51);
+            var add =  randrange(-45, 60);
 
             var skill_num =  randrange(1, 5);
             
