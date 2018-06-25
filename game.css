@@ -4,6 +4,8 @@ body{
   margin:auto;
   width: 90%;
   font-size:large;
+  background-image: url("background.jpg");
+
 }
 
 ul{
