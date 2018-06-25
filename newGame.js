@@ -466,3 +466,10 @@ function lose_check(){
         addText("testing", "function lose_check failed");
       }
       }
+// testing
+document.getElementById("C1").style.cursor = "pointer";
+document.getElementById("C2").style.cursor = "pointer";
+document.getElementById("C3").style.cursor = "pointer";
+document.getElementById("C4").style.cursor = "pointer";
+document.getElementById("C5").style.cursor = "pointer";
+document.getElementById("C6").style.cursor = "pointer";
