@@ -189,14 +189,15 @@ function charGen(){
  // adds option to clean list
 function clean(option, list_clean){
         // calls clean_clean
-       if (list_clean.length > 5){
+       if (list_clean.length > 4){
             // empty list
             list_clean.length = 0;
         }
         // checks if option is list_clean
         if ((list_clean.indexOf("option")==-1)){
+        	list_clean.push(option);
             return true;
-         list_clean.push(option);
+         
         }
         
             // return true
@@ -305,12 +306,12 @@ function skill_choice(skill_temp){
             // gen random num
             var add =  randrange(-50, 51);
 
-            var skill_num =  randrange(1, 5);
+            var skill_num =  randrange(0, 5);
             
             var test = clean(skill_num, cleanSkill);
-            while (test != true){
+            while (test != false){
                 // chooses what skill to add to
-                skill_num =  randrange(1, 5);
+                skill_num =  randrange(0, 5);
                test =clean(skill_num, cleanSkill);
             }
             if (skill_num == 1){
