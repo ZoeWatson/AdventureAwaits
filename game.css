@@ -54,7 +54,9 @@ article{
   float: left;
   
 }
-
+#about p{
+  text-align: center;
+}
 #foot{
   clear: both;
   text-align: center;
@@ -65,4 +67,15 @@ article{
 .cit{
   font-style:italic;
   font-size: xx-small;
+}
+
+.grader {
+  font-size: xx-large;
+  background-color: black;
+
+}
+.grader a{
+  font-size: xx-large;
+  color: white;
+  
 }
