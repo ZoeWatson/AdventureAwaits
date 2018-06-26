@@ -13,7 +13,25 @@
   <body id = 'about'>
     <header id ='head'> <h1> My Choices </h1> </header>
 <article id = 'main'>
-  
+  <h2> Adventure Awaits! </h2>
+<p>
+My site is a host for the Video Game Adventure Awaits. The game is a text adventure game, and it is silly randomly generated fun created entirely in javascript. The reason why I chose to create a text adventure game is because it allowed me to create a large and complicated program that did not require many assets</p>
+
+<h2> Arrays </h2>
+<p>
+I used a lot of arrays in this project.  I created an array for the scenarios, the options, the character names,  the titles, the pronouns, the favorite colors, and two for the quests. In each of these arrays were a long list of options that I could pull from at random to generate the game. Having a plethora of options helps keep the game silly and fun.
+</p>
+
+<h2> Random generators </h2>
+<p>
+Random generation is a central mechanic in this game. It is used in nearly every part of the game, from the charter generation, to how many choices the player gets for each scenario, to the scenario that is displayed. In creating this game I wanted to use a lot of random generation in the design because I find it makes the fun and surprising. As JavaScript does not have a random range function, ie a function that generates a random number within a specific range, I created my own with help from W3schools’s website. 
+</p>
+
+<h2>Cleaning function </h2>
+<p>
+As random generation is such an important factor in the game it was necessary to create a function to keep the same option from selected in a row. I created a cleaning function for this purpose. It saves the past 6 options in an array and prevents the program from choosing an option saved in the array. This stops the program from generating the same option in a row.
+</p>
+
 </article>       
   </body>
 </html>
